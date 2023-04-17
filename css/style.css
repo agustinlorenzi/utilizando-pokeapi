@@ -1,0 +1,9 @@
+.main{
+    position: relative;
+    top: 100px;    
+}
+
+#vidriera{
+    display: flex;
+    flex-wrap: wrap;
+}
