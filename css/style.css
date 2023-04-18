@@ -7,3 +7,8 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.navbar{
+    display: flex;
+    justify-content: center;
+}

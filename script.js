@@ -3,8 +3,7 @@ let pokemons = []
 for(let i=1; i <=151;i++){
     fetch(`https://pokeapi.co/api/v2/pokemon/${i}/`)
     .then(res => res.json())
-    .then(data => {
-        //console.log(data)
+    .then(data => {        
         let tipos = data.types.map(type=>type.type.name)
         pokemons.push({id:data.id,tipos:tipos,imagen:data.sprites.front_default,nombre:data.name,altura:data.height,peso:data.weight})     
     })
