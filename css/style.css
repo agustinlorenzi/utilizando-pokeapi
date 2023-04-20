@@ -1,14 +1,164 @@
-.main{
-    position: relative;
-    top: 100px;    
+* {
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
+
+/* clases del header */
+.logo{
+    height: 100px;
+    margin: 10px;
+    border-radius: 20%;
+}
+
+/*.navbar-nav me-auto mb-2 mb-lg-0 {
+    width: 80vw;
+}*/
+
+
+
+.navbar {
+    /* height: auto; */
+    overflow-y: hidden;
+    background-color: rgb(250, 250, 96); 
+    
+}
+
+.container-fluid{
+    background-color: rgb(250, 250, 96); 
+
+}
+
+
+
+.nav-color {
+    background-color: rgb(250, 250, 18); 
+    height: 130px;  
+    
+}
+
+/*.navbar ul {
+    padding-left: 150px;
+    font-size: 20px;
+}*/
+
+.seleccionar{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(247, 223, 11);
+    padding: 8px;
+    border-radius: 10%;
+
+}
+
+
+
+.navbar-toggler {
+    background-color: bisque;
+    /* margin: 10px; */
+}
+
+
+
+/* clases del main */
+
+.main{
+    background-color: rgba(255, 248, 220, 0.432);
+}
+
+.card{
+    margin: 10px 10px;
+    overflow-y: hidden;
+    background-color: rgb(255, 237, 215);
+    display: flex;
+    align-items: center;
+    
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.card-title{
+    overflow-y: hidden;
+}
+
+.card-text{
+    overflow-y: hidden;
+    font-weight: 600;
+}
+
+.boton-datos{
+    overflow-y: hidden;
+}
+
+.card-atras{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.card-body-atras{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 10px;
+    
+}
+
+.card img{
+    width: 200px;
+    padding: 15px 10px;
+    
+}
+
+
 
 #vidriera{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.navbar{
-    display: flex;
-    justify-content: center;
+@media (min-width: 768px) {
+    .seleccionar{
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    .label-seleccionar{
+        margin-right: 10px;
+    }
+
+    #selector{
+        width: 26%;
+    }
 }
+
+
+@media (min-width: 1024px) {
+    .collapse{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #busq{
+        width: 30vw;
+    }
+
+    
+}
+
+
+
+
+
+
+

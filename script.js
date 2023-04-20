@@ -5,7 +5,7 @@ for(let i=1; i <=151;i++){
     .then(res => res.json())
     .then(data => {        
         let tipos = data.types.map(type=>type.type.name)
-        pokemons.push({id:data.id,tipos:tipos,imagen:data.sprites.front_default,nombre:data.name,altura:data.height,peso:data.weight})     
+        pokemons.push({id:data.id,tipos:tipos,imagen:data.sprites.other.dream_world.front_default,nombre:data.name,altura:data.height,peso:data.weight})     
     })
 }
 setTimeout(()=>{
@@ -15,10 +15,10 @@ setTimeout(()=>{
     function Agregar(num){           
         stringId = num.toString();    
         let card = document.getElementById(stringId)
-        card.innerHTML = `<div  class="card" style="width: 18rem;height: 30rem;">        
-        <div class="card-body">          
-          <h5 class="card-title color">${pokemons[num-1].altura}</h5>
-          <h5 class="card-title color">${pokemons[num-1].peso}</h5>
+        card.innerHTML = `<div  class="card-atras" style="width: 18rem;height: 29rem;">        
+        <div class="card-body-atras">          
+          <h5 class="card-title color">Altura: ${pokemons[num-1].altura}</h5>
+          <h5 class="card-title color">Peso: ${pokemons[num-1].peso}</h5>
           <button onclick="remostrar(pokemons)" class="btn btn-primary">Volver</button>         
         </div>
       </div>`
@@ -61,12 +61,12 @@ setTimeout(()=>{
         array.forEach((data) => {
             let contenedor = document.getElementById("vidriera");
             let content1 = document.createElement("div");            
-            content1.innerHTML = `<div id="${data.id}" class="card" style="width: 18rem; height: 30rem;">
+            content1.innerHTML = `<div id="${data.id}" class="card" style="width: 18rem; height: 29rem;">
             <img src="${data.imagen}" class="card-img-top" alt="${data.nombre}">
             <div class="card-body">
-              <p class="card-text color">${data.id}</p>
-              <h5 class="card-title color">${data.nombre}</h5>              
-              <button onclick="Agregar(${data.id})" class="btn btn-primary">Ver Más</button>              
+              <p class="card-text color">ID: ${data.id}</p>
+              <h5 class="card-title color">${data.nombre.toUpperCase()}</h5>              
+              <button onclick="Agregar(${data.id})" class="btn btn-primary boton-datos">Más Datos</button>              
             </div>
           </div>
             `;
