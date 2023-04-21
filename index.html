@@ -11,9 +11,8 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>    
+<body>
     <header class="nav-color">
-
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img class="logo m-2" src="./img/simbolo-pokemon.jpg" alt=""></a>
@@ -23,40 +22,31 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="mt-4 mb-4 seleccionar">
-
-                        <label class="label-seleccionar" for="">Seleccionar Pokemon por Categoria.</label>
-                        <select id="selector" name="tipos">
-                            <option value="-">Ver Todos</option>
-                            <option value="normal">Normal</option>
-                            <option value="fire">Fire</option>
-                            <option value="water">Water</option>
-                            <option value="electric">Electric</option>
-                            <option value="ice">Ice</option>
-                            <option value="fighting">Fighting</option>
-                            <option value="poison">Poison</option>
-                            <option value="ground">Ground</option>
-                            <option value="flying">Flying</option>
-                            <option value="psychic">Psychic</option>
-                            <option value="bug">Bug</option>
-                            <option value="rock">Rock</option>
-                            <option value="ghost">Ghost</option>
-                            <option value="dark">Dark</option>
-                            <option value="dragon">Dragon</option>
-                            <option value="steel">Steel</option>
-                            <option value="fairy">Fairy</option>
-                        </select>
-
-                    </div>
-
+                    <select id="selector" name="tipos">
+                        <option value="-">Categorias</option>
+                        <option value="normal">Normal</option>
+                        <option value="fire">Fire</option>
+                        <option value="water">Water</option>
+                        <option value="electric">Electric</option>
+                        <option value="ice">Ice</option>
+                        <option value="fighting">Fighting</option>
+                        <option value="poison">Poison</option>
+                        <option value="ground">Ground</option>
+                        <option value="flying">Flying</option>
+                        <option value="psychic">Psychic</option>
+                        <option value="bug">Bug</option>
+                        <option value="rock">Rock</option>
+                        <option value="ghost">Ghost</option>
+                        <option value="dark">Dark</option>
+                        <option value="dragon">Dragon</option>
+                        <option value="steel">Steel</option>
+                        <option value="fairy">Fairy</option>
+                    </select>
                     <form class="d-flex" role="search">
-                        <input id="busq" class="form-control" type="text"
-                            placeholder="Buscar Pokemon por Id o Nombre." aria-label="Search">
-                        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                        <input id="busq" class="form-control" type="text" placeholder="Buscar Pokemon por Id o Nombre."
+                            aria-label="Search">                        
                     </form>
-
                 </div>
-
             </div>
         </nav>
     </header>
@@ -64,7 +54,6 @@
     <main class="main p-3">
 
         <div id="vidriera">
-
 
         </div>
 

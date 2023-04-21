@@ -65,7 +65,7 @@ setTimeout(()=>{
             <img src="${data.imagen}" class="card-img-top" alt="${data.nombre}">
             <div class="card-body">
               <p class="card-text color">ID: ${data.id}</p>
-              <h5 class="card-title color">${data.nombre.toUpperCase()}</h5>              
+              <h5 class="card-title color">${data.nombre.toUpperCase()}</h5>                         
               <button onclick="Agregar(${data.id})" class="btn btn-primary boton-datos">Más Datos</button>              
             </div>
           </div>
