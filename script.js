@@ -15,7 +15,7 @@ setTimeout(()=>{
     function Agregar(num){           
         stringId = num.toString();    
         let card = document.getElementById(stringId)
-        card.innerHTML = `<div  class="card-atras" style="width: 18rem;height: 29rem;">        
+        card.innerHTML = `<div  class="card-atras" style="width: 17rem;height: 29rem;">        
         <div class="card-body-atras">          
           <h5 class="card-title color">Altura: ${pokemons[num-1].altura}</h5>
           <h5 class="card-title color">Peso: ${pokemons[num-1].peso}</h5>
@@ -61,7 +61,7 @@ setTimeout(()=>{
         array.forEach((data) => {
             let contenedor = document.getElementById("vidriera");
             let content1 = document.createElement("div");            
-            content1.innerHTML = `<div id="${data.id}" class="card" style="width: 18rem; height: 29rem;">
+            content1.innerHTML = `<div id="${data.id}" class="card" style="width: 17rem; height: 29rem;">
             <img src="${data.imagen}" class="card-img-top" alt="${data.nombre}">
             <div class="card-body">
               <p class="card-text color">ID: ${data.id}</p>
