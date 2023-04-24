@@ -5,7 +5,8 @@
 
 /* clases del header */
 .logo{
-    height: 100px;
+    width: 205px;
+    /* height: 100px; */
     margin: 10px;
     border-radius: 20%;
 }
